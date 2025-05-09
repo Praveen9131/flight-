@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import pickle
 
-def predict_flight_delay(sample_input, model_path='/root/v/Real-Time-Flight-Delay-Prediction/major/flight_delay_model1.pkl'):
+def predict_flight_delay(sample_input, model_path='/major/flight_delay_model1.pkl'):
     """Predict flight delay using the pickle file and sample input, or apply if-else rule."""
     # If-else rule for extreme conditions
     if (sample_input['wind_speed'] > 50.0 and 
